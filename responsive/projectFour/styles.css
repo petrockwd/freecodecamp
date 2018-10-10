@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans',Arial,sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  //position: fixed;
+  border: 2px solid gray;
+}
+#main-container {
+  display: grid;
+  grid-template-columns: 1.2fr 5fr;
+}
+
+#navbar h2 {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#navbar div {
+  border-top: 1px solid black;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+#main-doc {
+  padding-left: 50px;
+  padding-top: 30px;
+  border-top: 2px solid gray;
+}
+
+#main-doc p {
+  padding-left: 15px;
+}
