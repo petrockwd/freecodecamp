@@ -4,12 +4,56 @@ body {
   text-align: center;
 }
 
-.container {
+.form-container {
   display: grid;
-  grid-template-columns: 0.4fr 1fr 0.4fr;
+  grid-template-columns: 20% 60% 20%;
 }
 
 .form-div {
-  background-color: white;
-  border-radius: 5px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: block;
+  grid-template-rows: auto;
+  padding: 15px;
+}
+
+#description {
+  margin-top: 18px;
+}
+
+#form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.right {
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+#name, #email, #number {
+  width: 230px;
+  height: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+#submit {
+    background-color: #59ace0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
 }
