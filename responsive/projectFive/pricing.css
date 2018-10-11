@@ -1,9 +1,25 @@
 #pricing-container {
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 1fr;
   text-align: center;
 }
 
-#pricing-container div {
-  padding: 20px;
+.pricingBox-container {
+  margin: 10px;
+}
+
+.pricing-top {
+  border: 1.5px solid #887781;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.pricing {
+  background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  border-left: 1.5px solid #887781;
+  border-right: 1.5px solid #887781;
+  border-bottom: 1.5px solid #887781;
 }

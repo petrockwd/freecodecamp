@@ -5,14 +5,19 @@
 
 body {
   background-color: #D5D5D5;
+  letter-spacing: 0.2em;
+  font-family: 'Pacifico';
+  font-style: oblique;
+  color: #887781;
 }
 
-body div {
+/*body div {
   border: 1px dotted red;
-}
+}*/
 
 .painting {
   background-color: #96858F;
+  color: #96858F;
 }
 
 .henna {
