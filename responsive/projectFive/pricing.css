@@ -1,0 +1,9 @@
+#pricing-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 1fr;
+  text-align: center;
+}
+
+#pricing-container div {
+  padding: 20px;
+}

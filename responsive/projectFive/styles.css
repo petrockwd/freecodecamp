@@ -1,0 +1,24 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #D5D5D5;
+}
+
+body div {
+  border: 1px dotted red;
+}
+
+.painting {
+  background-color: #96858F;
+}
+
+.henna {
+  background-color: #6D7993;
+}
+
+.caligraphy {
+  background-color: #9099A2;
+}

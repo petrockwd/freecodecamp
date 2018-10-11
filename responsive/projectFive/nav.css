@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  letter-spacing: 0.2em;
+  font-family: 'Pacifico';
+  font-style: oblique;
+  color: #887781;
+}
+
+#titleImage {
+  margin-left: 40px;
+  padding: 20px;
+}
+
+nav {
+  margin-left: auto;
+  margin-right: 40px;
+  display: flex;
+}
+
+nav div {
+  padding: 20px;
+  min-width: 100px;
+}
+
+nav div:hover {
+  color: #fff;
+}

@@ -1,0 +1,25 @@
+#container {
+  display: grid;
+  grid-template-columns: 24% 52% 24%;
+}
+
+#about-container {
+  margin-top: 100px;
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  text-align: center;
+
+}
+
+#about-container div {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#about-container div:hover {
+  background-color: #D5D5D5;
+}
