@@ -20,6 +20,11 @@ nav div {
   min-width: 100px;
 }
 
-nav div:hover {
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a:hover {
   color: #fff;
 }

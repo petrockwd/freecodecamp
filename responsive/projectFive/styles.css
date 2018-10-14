@@ -15,15 +15,10 @@ body {
   border: 1px dotted red;
 }*/
 
-.painting {
-  background-color: #96858F;
-  color: #96858F;
-}
-
-.henna {
-  background-color: #6D7993;
-}
-
-.caligraphy {
-  background-color: #9099A2;
+footer {
+  padding-right: 20px;
+  text-align: right;
+  background-color: #887781;
+  color: #fff;
+  margin-top: 50px;
 }

@@ -5,7 +5,9 @@
   <link rel="stylesheet" type="text/css" href="./nav.css">
   <link rel="stylesheet" type="text/css" href="./about.css">
   <link rel="stylesheet" type="text/css" href="./pricing.css">
+  <link rel="stylesheet" type="text/css" href="./form.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <title>Manjot Kaur - Artist</title>
 </head>
 <body>
@@ -15,9 +17,9 @@
         <div><h3>Manjot Kaur - artist</h3></div>
       </div>
       <nav>
-        <div id="about"><h3>about</h3></div>
-        <div id="pricing"><h3>pricing</h3></div>
-        <div id="contact"><h3>contact</h3></div>
+        <div id="about"><h3><a href="#container">about</a></h3></div>
+        <div id="pricing"><h3><a href="#pricing-container">pricing</a></h3></div>
+        <div id="contact"><h3><a href="#contact-form">contact</a></h3></div>
     </nav>
   </header>
 
@@ -25,24 +27,24 @@
     <div></div>
     <div id="about-container">
       <div></div>
-      <div></div>
-      <div></div>
-      <div class="painting"></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div class="henna"></div>
-      <div></div>
-      <div class="caligraphy"></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div id="henna4"></div>
+      <div id="painting1"></div>
+      <div id="painting" onmouseover="paintingOn()" onmouseout="paintingOff()"></div>
+      <div id="painting2"></div>
+      <div id="caligraphy1"></div>
+      <div id="caligraphy2"></div>
+      <div id="henna2"></div>
+      <div id="henna1"></div>
+      <div id="henna" onmouseover="hennaOn()" onmouseout="hennaOff()"></div>
+      <div id="painting3"></div>
+      <div id="caligraphy" onmouseover="caligraphyOn()" onmouseout="caligraphyOff()"></div>
+      <div id="caligraphy4"></div>
       <div></div>
       <div></div>
       <div></div>
+      <div id="henna3"></div>
+      <div id="painting4"></div>
+      <div id="caligraphy3"></div>
       <div></div>
       <div></div>
     </div>
@@ -52,7 +54,7 @@
   <div id="pricing-container">
     <div></div>
     <div class="pricingBox-container">
-      <div class="pricing-top" color="#6D7993">henna</div>
+      <div class="pricing-top" color="#6D7993"><i class="far fa-hand-paper"></i>henna</div>
       <div class="pricing">
         <p>lorem ipsum</p><br />
         <p>lorem ipsum</p><br />
@@ -61,7 +63,7 @@
       </div>
     </div>
     <div class="pricingBox-container">
-      <div class="pricing-top" color="#96858F">paintings</div>
+      <div class="pricing-top" color="#96858F"><i class="fas fa-paint-brush"></i>paintings</div>
       <div class="pricing">
         <p>lorem ipsum</p><br />
         <p>lorem ipsum</p><br />
@@ -70,7 +72,7 @@
       </div>
     </div>
     <div class="pricingBox-container">
-      <div class="pricing-top">caligraphy</div>
+      <div class="pricing-top"><i class="fas fa-pen-fancy"></i>caligraphy</div>
       <div class="pricing">
         <p>lorem ipsum</p><br />
         <p>lorem ipsum</p><br />
@@ -81,6 +83,82 @@
     <div></div>
   </div>
 
+  <form>
+    <div id="contact-form">
+      <div></div>
+      <div id="form-text">
+        Name<br />
+        E-mail<br />
+        Request
+      </div>
+      <div id="form-input">
+        <input id="name" type="text" placeholder="name..."/><br />
+        <input id="email" type="email" placeholder="e-mail..."/><br />
+        <textarea id="request">your request...</textarea>
+      </div>
+      <div></div>
+    </div>
+    <center><button id="submit"><i class="fas fa-paper-plane"></i>  Send</button></center>
+  </form>
 
+<footer>
+  Copyright self.Destruct();
+</footer>
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function paintingOn() {
+      document.getElementById('painting1').style.background='red';
+      document.getElementById('painting2').style.background='red';
+      document.getElementById('painting3').style.background='red';
+      document.getElementById('painting4').style.background='red';
+    }
+
+    function paintingOff() {
+      document.getElementById('painting1').style.background='inherit';
+      document.getElementById('painting2').style.background='inherit';
+      document.getElementById('painting3').style.background='inherit';
+      document.getElementById('painting4').style.background='inherit';
+    }
+
+    function hennaOn() {
+      document.getElementById('henna1').style.background='red';
+      document.getElementById('henna2').style.background='red';
+      document.getElementById('henna3').style.background='red';
+      document.getElementById('henna4').style.background='red';
+    }
+
+    function hennaOff() {
+      document.getElementById('henna1').style.background='inherit';
+      document.getElementById('henna2').style.background='inherit';
+      document.getElementById('henna3').style.background='inherit';
+      document.getElementById('henna4').style.background='inherit';
+    }
+
+    function caligraphyOn() {
+      document.getElementById('caligraphy1').style.background='red';
+      document.getElementById('caligraphy2').style.background='red';
+      document.getElementById('caligraphy3').style.background='red';
+      document.getElementById('caligraphy4').style.background='red';
+    }
+
+    function caligraphyOff() {
+      document.getElementById('caligraphy1').style.background='inherit';
+      document.getElementById('caligraphy2').style.background='inherit';
+      document.getElementById('caligraphy3').style.background='inherit';
+      document.getElementById('caligraphy4').style.background='inherit';
+    }
+
+
+
+  </script>
 </body>
 </html>

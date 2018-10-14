@@ -1,4 +1,19 @@
+#painting {
+  background-color: #96858F;
+  color: #96858F;
+}
+
+#henna {
+  background-color: #6D7993;
+}
+
+#caligraphy {
+  background-color: #9099A2;
+}
+
 #container {
+  padding-top: 150px;
+  padding-bottom: 150px;
   display: grid;
   grid-template-columns: 24% 52% 24%;
 }
