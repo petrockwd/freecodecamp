@@ -1,14 +1,17 @@
 #painting {
   background-color: #96858F;
   color: #96858F;
+  align-content: center;
 }
 
 #henna {
   background-color: #6D7993;
+  color: #6D7993;
 }
 
 #caligraphy {
   background-color: #9099A2;
+  color: #9099A2;
 }
 
 #container {

@@ -12,6 +12,8 @@
 </head>
 <body>
 
+
+<!--
   <header>
       <div id="titleImage">
         <div><h3>Manjot Kaur - artist</h3></div>
@@ -22,22 +24,22 @@
         <div id="contact"><h3><a href="#contact-form">contact</a></h3></div>
     </nav>
   </header>
-
+-->
   <div id="container">
     <div></div>
     <div id="about-container">
       <div></div>
       <div id="henna4"></div>
       <div id="painting1"></div>
-      <div id="painting" onmouseover="paintingOn()" onmouseout="paintingOff()"></div>
+      <div id="painting" onmouseover="paintingOn()" onmouseout="paintingOff()"><br />painting</div>
       <div id="painting2"></div>
       <div id="caligraphy1"></div>
       <div id="caligraphy2"></div>
       <div id="henna2"></div>
       <div id="henna1"></div>
-      <div id="henna" onmouseover="hennaOn()" onmouseout="hennaOff()"></div>
+      <div id="henna" onmouseover="hennaOn()" onmouseout="hennaOff()"><br />henna</div>
       <div id="painting3"></div>
-      <div id="caligraphy" onmouseover="caligraphyOn()" onmouseout="caligraphyOff()"></div>
+      <div id="caligraphy" onmouseover="caligraphyOn()" onmouseout="caligraphyOff()"><br />caligraphy</div>
       <div id="caligraphy4"></div>
       <div></div>
       <div></div>
@@ -105,60 +107,9 @@
   Copyright self.Destruct();
 </footer>
 
+<script src="scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
-
-
-
-
-
-
-
-  <script>
-    function paintingOn() {
-      document.getElementById('painting1').style.background='red';
-      document.getElementById('painting2').style.background='red';
-      document.getElementById('painting3').style.background='red';
-      document.getElementById('painting4').style.background='red';
-    }
-
-    function paintingOff() {
-      document.getElementById('painting1').style.background='inherit';
-      document.getElementById('painting2').style.background='inherit';
-      document.getElementById('painting3').style.background='inherit';
-      document.getElementById('painting4').style.background='inherit';
-    }
-
-    function hennaOn() {
-      document.getElementById('henna1').style.background='red';
-      document.getElementById('henna2').style.background='red';
-      document.getElementById('henna3').style.background='red';
-      document.getElementById('henna4').style.background='red';
-    }
-
-    function hennaOff() {
-      document.getElementById('henna1').style.background='inherit';
-      document.getElementById('henna2').style.background='inherit';
-      document.getElementById('henna3').style.background='inherit';
-      document.getElementById('henna4').style.background='inherit';
-    }
-
-    function caligraphyOn() {
-      document.getElementById('caligraphy1').style.background='red';
-      document.getElementById('caligraphy2').style.background='red';
-      document.getElementById('caligraphy3').style.background='red';
-      document.getElementById('caligraphy4').style.background='red';
-    }
-
-    function caligraphyOff() {
-      document.getElementById('caligraphy1').style.background='inherit';
-      document.getElementById('caligraphy2').style.background='inherit';
-      document.getElementById('caligraphy3').style.background='inherit';
-      document.getElementById('caligraphy4').style.background='inherit';
-    }
-
-
-
-  </script>
 </body>
 </html>
