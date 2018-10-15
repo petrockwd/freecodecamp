@@ -13,6 +13,8 @@ body {
   text-align: right;
   width: 100%;
   position: fixed;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #navbar a {
@@ -20,14 +22,25 @@ body {
   text-decoration: none;
 }
 
+#navbar ul li {
+  display: inline;
+  padding: 10px;
+  margin-right: 15px;
+}
+
 #welcome {
   background: #e0ebe8;
+  padding: 100px;
+}
+
+#projects {
   padding: 100px;
 }
 
 #contact {
   background: #C8F7C5;
   padding-bottom: 160px;
+  padding-top: 100px;
 }
 
 #contact-container {
@@ -40,7 +53,7 @@ body {
   border-radius: 100%;
   width: 100px;
   height: 100px;
-  margin: 10px;
+  margin: 30px;
   border: 2px solid #90C695;
   background: #fff;
   color: #008080;
