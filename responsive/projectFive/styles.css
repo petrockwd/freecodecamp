@@ -10,5 +10,53 @@ body {
 
 #navbar {
   background: #e0ebe8;
+  text-align: right;
+  width: 100%;
   position: fixed;
+}
+
+#navbar a {
+  color: #008080;
+  text-decoration: none;
+}
+
+#welcome {
+  background: #e0ebe8;
+  padding: 100px;
+}
+
+#contact {
+  background: #C8F7C5;
+  padding-bottom: 160px;
+}
+
+#contact-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+#contact-container div {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 2px solid #90C695;
+  background: #fff;
+  color: #008080;
+}
+
+#contact-container div:hover {
+  color: green;
+  background: #E4F1FE;
+}
+
+#contact-container h2 {
+  padding-top: 35px;
+}
+
+footer {
+  background: #22313F;
+  color: #fff;
+  padding: 40px;
 }
