@@ -1,5 +1,5 @@
 #calc-container {
-  height: 800px;
+  height: 700px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -10,6 +10,8 @@
   border: 3px solid var(--lavender);
   background: var(--sunshine);
   border-radius: 3px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(8, 1fr);
@@ -27,6 +29,20 @@
   font-weight: bold;
   text-align: center;
   margin: 3px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#calc div:hover {
+  color: #fff;
+}
+
+#calc div:active {
+  background: #fff;
+  color: var(--lavender);
 }
 
 #calc .number {
@@ -37,6 +53,7 @@
   grid-column: 1 / 6;
   background: #6BBAA7;
   color: white;
+  letter-spacing: 1.5px;
   font-weight: normal;
   font-style: italic;
   font-family: 'Roboto Condensed', sans-serif;
@@ -55,6 +72,7 @@
   grid-row: 2 / 3;
   background: #6BBAA7;
   color: white;
+  letter-spacing: 2px;
   font-weight: normal;
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
