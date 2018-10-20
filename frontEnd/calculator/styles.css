@@ -1,0 +1,67 @@
+/*set color variables*/
+:root {
+  --lavender: #6C648B;
+  --rose: #B6A19E;
+  --sunshine: #FBA100;
+  --aqua: #52AD98;
+}
+
+body {
+  background: var(--rose);
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  height: 100%;
+}
+
+/***** header *****/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--lavender);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.fa-html5 {
+  color: red;
+  font-size: 28px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.fa-css3-alt {
+  color: blue;
+  font-size: 28px;
+  padding-right: 10px;
+}
+
+.fa-js-square {
+  color: yellow;
+  font-size: 28px;
+  padding-right: 10px;
+}
+
+#jquery-img {
+  width: 60px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+/***** footer *****/
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--lavender);
+}
+
+footer p {
+  text-align: right;
+  padding-right: 30px;
+}
