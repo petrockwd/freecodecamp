@@ -18,7 +18,6 @@ const cmdArr = [];
 let runningTotal = 0;
 
 function command(cmd) {
-
   let inputText = $('#input').text();
 
   $('#display').append(`${inputText} ${cmd} `);
@@ -41,7 +40,6 @@ function command(cmd) {
 
   input(runningTotal);
 
-
   /***** For BEDMAS stuff below *****/
   // get input text and cmd and add to arrays
   inputArr.push(parseFloat(inputText));
@@ -52,7 +50,6 @@ function command(cmd) {
 }
 
 function input(number) {
-  zeroInputCheck();
   $('#input').empty();
   $('#input').append(number);
 }
