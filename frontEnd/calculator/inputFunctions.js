@@ -14,6 +14,7 @@ function zeroCommandCheck() {
 
 const inputArr = [];
 const cmdArr = [];
+
 let runningTotal = 0;
 
 function command(cmd) {
@@ -22,22 +23,22 @@ function command(cmd) {
 
   $('#display').append(`${inputText} ${cmd} `);
   $('#input').empty();
-  
-  
+
   switch(cmd) {
     case '+':
       runningTotal += parseFloat(inputText);
       break;
     case '-':
-      runningTotal -= inputText;
+      runningTotal -= parseFloat(inputText);
       break;
     case '*':
-      runningTotal *= inputText;
+      runningTotal *= parseFloat(inputText);
       break;
     case "/":
-      runningTotal /= inputText;
+      runningTotal /= parseFloat(inputText);
       break;
       }
+
   input(runningTotal);
 
 
@@ -52,6 +53,7 @@ function command(cmd) {
 
 function input(number) {
   zeroInputCheck();
+  $('#input').empty();
   $('#input').append(number);
 }
 

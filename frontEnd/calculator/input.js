@@ -30,6 +30,7 @@ $('#decimal').click(() => {input('.');});
 $('#C').click(() => {
   $('#display').empty();
   $('#input').empty();
+  runningTotal = 0;
   input('0');
 });
 
