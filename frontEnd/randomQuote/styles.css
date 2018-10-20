@@ -1,24 +1,30 @@
+:root {
+  --random-one: #fff;
+  --random-two: #333;
+}
+
 *{
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: #fff;
-  color: #fff;
+  background: var(--random-one);
+  color: var(--random-one);
   font-family: 'Bai Jamjuree', sans-serif;
 }
 
 header {
-  background: #333;
+  width: 100%;
+  background: var(--random-two);
   text-align: center;
 }
 
-header h4 {
+header h2 {
   padding-top: 10px;
 }
 
-header h5 {
+header h3 {
   padding-bottom: 10px;
 }
 
@@ -38,7 +44,7 @@ header h5 {
 }
 
 header img {
-  height: 40px;
+  height: 30px;
   width: auto;
 }
 
@@ -47,8 +53,11 @@ footer {
   width: 100%;
   left: 0;
   bottom: 0;
-  background: #333;
+  background: var(--random-two);
   text-align: right;
   padding: 10px;
-  padding-right: 20px;
+}
+
+footer h3 {
+  padding-right: 40px;
 }
