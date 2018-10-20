@@ -12,9 +12,21 @@ function zeroCommandCheck() {
   }
 }
 
+const inputArr = [];
+
 function command(cmd) {
   zeroCommandCheck();
   let inputText = $('#input').text();
+
+  // get input text and add to array
+  // probably don't need to do this as no BEDMAS req'd
+  inputArr.push(parseFloat(inputText));
+  inputArr.push(cmd);
+
+  //test
+  console.log(inputArr);
+
+
   $('#display').append(`${inputText} ${cmd} `);
   $('#input').empty();
   input('0');
