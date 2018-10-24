@@ -13,23 +13,41 @@ function zeroCommandCheck() {
 }
 
 const inputArr = [];
+const cmdArr = [];
+let runningTotal = 0;
 
 function command(cmd) {
-  zeroCommandCheck();
+
   let inputText = $('#input').text();
-
-  // get input text and add to array
-  // probably don't need to do this as no BEDMAS req'd
-  inputArr.push(parseFloat(inputText));
-  inputArr.push(cmd);
-
-  //test
-  console.log(inputArr);
-
 
   $('#display').append(`${inputText} ${cmd} `);
   $('#input').empty();
-  input('0');
+  
+  
+  switch(cmd) {
+    case '+':
+      runningTotal += parseFloat(inputText);
+      break;
+    case '-':
+      runningTotal -= inputText;
+      break;
+    case '*':
+      runningTotal *= inputText;
+      break;
+    case "/":
+      runningTotal /= inputText;
+      break;
+      }
+  input(runningTotal);
+
+
+  /***** For BEDMAS stuff below *****/
+  // get input text and cmd and add to arrays
+  inputArr.push(parseFloat(inputText));
+  cmdArr.push(cmd);
+  //test arrays
+  console.log(inputArr);
+  console.log(cmdArr);
 }
 
 function input(number) {
