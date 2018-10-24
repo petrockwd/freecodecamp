@@ -8,6 +8,7 @@
 
 #calc {
   border: 3px solid var(--lavender);
+  padding: 10px;
   background: var(--sunshine);
   border-radius: 3px;
   border-top-left-radius: 6px;
@@ -22,7 +23,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid var(--lavender);
-  border-radius: 3px;
+  border-radius: 5px;
   background: var(--aqua);
   color: var(--lavender);
   padding: 10px 5px 10px 5px;
@@ -46,22 +47,23 @@
 }
 
 #calc .number {
-  background: #6BBAA7;
+  background: #A8D6CB;
 }
 
 #calc #display {
   grid-column: 1 / 6;
-  background: #6BBAA7;
-  color: white;
+  background: #CBE7E1;
+  color: black;
+  font-size: 0.8em;
   letter-spacing: 1.5px;
   font-weight: normal;
   font-style: italic;
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
   border-radius: 0;
-  border-top: 1px solid var(--lavender);
-  border-left: 1px solid var(--lavender);
-  border-right: 1px solid var(--lavender);
+  border-top: 3px solid var(--lavender);
+  border-left: 3px solid var(--lavender);
+  border-right: 3px solid var(--lavender);
   border-bottom: 0;
   justify-content: flex-end;
   padding-right: 10px;
@@ -70,8 +72,9 @@
 #calc #input {
   grid-column: 1 / 6;
   grid-row: 2 / 3;
-  background: #6BBAA7;
-  color: white;
+  background: #CBE7E1;
+  color: #418b7a;
+  font-size: 1.2em;
   letter-spacing: 2px;
   font-weight: normal;
   font-family: 'Roboto Condensed', sans-serif;
@@ -79,12 +82,12 @@
   border-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  border-left: 1px solid var(--lavender);
-  border-right: 1px solid var(--lavender);
+  border-left: 3px solid var(--lavender);
+  border-right: 3px solid var(--lavender);
   border-bottom: 3px solid var(--lavender);
   justify-content: flex-end;
   padding-right: 15px;
-  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 #calc #equals {

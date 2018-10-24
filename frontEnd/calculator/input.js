@@ -2,107 +2,57 @@
 ****** number clicks ******
 ****************************/
 
-$('#zero').click(function() {
-  zeroInputCheck();
-  $('#input').append('0');
-});
+$('#zero').click(() => {input('0');});
 
-$('#one').click(function() {
-  zeroInputCheck();
-  $('#input').append('1');
-});
+$('#one').click(() => {input('1');});
 
-$('#two').click(function() {
-  zeroInputCheck();
-  $('#input').append('2');
-});
+$('#two').click(() => {input('2');});
 
-$('#three').click(function() {
-  zeroInputCheck();
-  $('#input').append('3');
-});
+$('#three').click(() => {input('3');});
 
-$('#four').click(function() {
-  zeroInputCheck();
-  $('#input').append('4');
-});
+$('#four').click(() => {input('4');});
 
-$('#five').click(function() {
-  zeroInputCheck();
-  $('#input').append('5');
-});
+$('#five').click(() => {input('5');});
 
-$('#six').click(function() {
-  zeroInputCheck();
-  $('#input').append('6');
-});
+$('#six').click(() => {input('6');});
 
-$('#seven').click(function() {
-  zeroInputCheck();
-  $('#input').append('7');
-});
+$('#seven').click(() => {input('7');});
 
-$('#eight').click(function() {
-  zeroInputCheck();
-  $('#input').append('8');
-});
+$('#eight').click(() => {input('8');});
 
-$('#nine').click(function() {
-  zeroInputCheck();
-  $('#input').append('9');
-});
+$('#nine').click(() => {input('9');});
 
-$('#decimal').click(function() {
-  zeroInputCheck();
-  $('#input').append('.');
-});
+$('#decimal').click(() => {input('.');});
 
 /****************************
 *** basic function clicks ***
 ****************************/
-$('#C').click(function() {
+$('#C').click(() => {
   $('#display').empty();
   $('#input').empty();
-  $('#input').append('0');
+  input('0');
 });
 
-$('#CE').click(function() {
+$('#CE').click(() => {
   $('#input').empty();
-  $('#input').append('0');
+  input('0');
 });
 
-$('#back').click(function() {
+$('#plus').click(() => {command('+');});
 
-});
+$('#minus').click(() => {command('-');});
 
-$('#plus').click(function() {
-  zeroInputCheck2();
-  let inputText = $('#input').text();
-  $('#display').append(`${inputText} + `);
-  $('#input').empty();
-  $('#input').append('0');
-});
+$('#divide').click(() => {command('/');});
 
-$('#minus').click(function() {
-  zeroInputCheck2();
-  let inputText = $('#input').text();
-  $('#display').append(`${inputText} - `);
-  $('#input').empty();
-  $('#input').append('0');
-});
+$('#multiply').click(() => {command('*');});
 
-$('#divide').click(function() {
-  zeroInputCheck2();
-  let inputText = $('#input').text();
-  $('#display').append(`${inputText} / `);
-  $('#input').empty();
-  $('#input').append('0');
-});
+/****************************
+****** keyboard clicks ******
+****************************/
 
-$('#multiply').click(function() {
-  zeroInputCheck2();
-  let inputText = $('#input').text();
-  $('#display').append(`${inputText} * `);
-  $('#input').empty();
-  $('#input').append('0');
+$(() => {
+   $(window).keypress((e) => {
+       var key = e.which;
+       keyboardInput(key);
+   });
 });
