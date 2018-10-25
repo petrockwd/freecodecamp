@@ -48,6 +48,48 @@ header img {
   width: auto;
 }
 
+#container {
+  color: var(--random-two);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#content {
+  border: 3px solid var(--random-two);
+  display: block;
+  width: 300px;
+  height: auto;
+}
+
+#quote {
+  padding: 20px;
+}
+
+#author {
+  padding-bottom: 10px;
+  width: 75%;
+  text-align: right;
+}
+
+#next {
+  color: var(--random-two);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#next-click {
+  cursor: pointer;
+}
+
+#next-click:hover {
+  color: black;
+}
+
 footer {
   position: fixed;
   width: 100%;
